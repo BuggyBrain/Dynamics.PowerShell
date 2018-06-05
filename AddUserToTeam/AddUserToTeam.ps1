@@ -29,7 +29,7 @@
 		out-file -filepath $statusFilePath -inputobject "Email Id,Team,Status"
 
         $Cred = Get-Credential
-        $CRMConn = Get-CrmConnection -Credential $Cred -DeploymentRegion AsiaPacific –OnlineType Office365 –OrganizationName $OrgName
+        $CRMConn = Get-CrmConnection -Credential $Cred -DeploymentRegion APAC –OnlineType Office365 –OrganizationName $OrgName
                
 		foreach ($user in $csvData)
 		{	
